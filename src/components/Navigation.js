@@ -7,15 +7,15 @@ const Navigation = () => {
                   <li><NavLink exact to="/"  activeClassName="projets" >
                    Home
                   </NavLink></li>
-                  <li className='nav_projets'>  Projects <ul className='nav-projets'>
+                  <li className='nav_projets'>  Infos Dades <ul className='nav-projets'>
                                   <li> <NavLink exact to="/projet1" activeClassName="projets" >
-                                    magasin des plantes
+                                    Histoire de Boumalne Dades
                                 </NavLink></li>
                                 <li> <NavLink exact to="/projet2" activeClassName="projets" >
-                                  Rest  Countries API
+                                   Dadés vallée
                                 </NavLink></li>
                                 <li> <NavLink exact to="/projet3" activeClassName="projets" >
-                                   Todo_list (manage contacts)
+                                   Cultures et Activités
                                 </NavLink></li>
                          </ul>
                    </li>
