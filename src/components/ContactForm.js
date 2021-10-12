@@ -23,7 +23,7 @@ const ContactForm = () => {
         return true;
       } else {
         isMail.style.display = "block";
-        isMail.style.animation = "dongle 1s";
+        isMail.style.animation = "dongle 2s";
         setTimeout(() => {
           isMail.style.animation = "none";
         }, 1000);
@@ -44,9 +44,9 @@ const ContactForm = () => {
       emailjs
         .send(
           // your service ID
-          "service_sr9mzsh",
+          "service_4jbef6b",
           // your template ID
-          "template_nr47kdn",
+          "template_5w4hhjm",
           {
             name,
             email,
@@ -129,13 +129,15 @@ const ContactForm = () => {
           required
         />
       </div>
+      <div >
       <input
-        className="formButton hover"
+        className="buttonForm"
         type="submit"
         value="envoyer"
         onClick={(e) => handleSubmit(e)}
       />
       <div className="formMessage"></div>
+      </div>
     </form>
   );
 };
