@@ -6,11 +6,34 @@ import SocialMedia from '../components/SocialMedia'
 import CopyToClipboard from 'react-copy-to-clipboard';
 import ButtonsScroll from '../components/ButtonsScroll';
 import ContactForm from '../components/ContactForm';
+import { motion } from 'framer-motion';
 const Contact = () => {
+
+    const variabls ={
+        initial :{
+            opacity:1,
+            x:0,
+        },
+        exit:{
+            opacity:0,
+            x:400
+        }
+
+    }
+    const transition={
+        ease:[0.03,0.87,0.73,0.9],
+        duration:0.6
+    }
     return (
         <div>
             <Mouse/>
-           <div  className='contact'>
+           <motion.div 
+            className='contact'
+            initial="exit"
+            exit="exit"
+            animate="initial"
+            variants={variabls}
+            transition={transition}>
             <Navigation/>
             <Logo/>
             <ContactForm/>
@@ -29,20 +52,20 @@ const Contact = () => {
             <div className="phone">
                 <div className="content">
                     <h4>Téléphone </h4>
-                    <CopyToClipboard text="094848493" className="hover">
+                    <CopyToClipboard text="07 49 64 58 09" className="hover">
                         <p style={{cursor : 'pointer'}} className="clipboard" onClick={() => {
                             alert("Télephone copie !!")
-                        }}>090998987</p>
+                        }}>07 49 64 58 09</p>
                     </CopyToClipboard>
                 </div>
             </div>
             <div className="email">
                 <div className="content ">
                     <h4>Email</h4>
-                    <CopyToClipboard text="Asso@gmail.com" className="hover">
+                    <CopyToClipboard text="boulgouslam@gmail.com" className="hover">
                         <p style={{cursor : 'pointer'}} className="clipboard" onClick={() => {
                             alert("Email copie !!")
-                        }}>Asso@gmail.com</p>
+                        }}>boulgouslam@gmail.com</p>
                     </CopyToClipboard>
                 </div>
             </div>
@@ -52,7 +75,7 @@ const Contact = () => {
             </div>
             </div>
             
-           </div> 
+           </motion.div> 
            <ButtonsScroll left="/projet3"/>
            
         </div>
