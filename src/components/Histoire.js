@@ -55,12 +55,15 @@ const Histoire = (props) => {
                           <h5> {projet.title}</h5>
                           <p>{projet.infos}</p>
                       </span>
-                      <ul className='scrol' >
-                      {projet.img.map((item) => {
-                           return <li key={item}><img src={item} alt='dades'/>  </li>
+                        <ul >
+                       {projet.img.map((item) => {
+                           return <li key={item}>
+                               <img src={item} alt="img bmln "/></li>
                        })}
-                       </ul>
-                                     </div>
+
+                   </ul>
+                </div>
+                
             </div>
             <div  className='button-container'>
                    <a href={projet.link} target='_blank' rel='noopener noreferrer' className='hover'>
@@ -68,7 +71,6 @@ const Histoire = (props) => {
                    </a>
             </div>
             <span className="random-circle" style={{left,top,transform}}>
-
             </span>
         </motion.div>
     );

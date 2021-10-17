@@ -166,8 +166,21 @@
     .error::placeholder {
       color: $red;
     }
-    .form-message {
-      margin-top: 10px;
+    .buttonForm{
+      margin-top: -60px;
+      height: 20px;
+      border: none;
+      width: 70px;
+      cursor: pointer;
+      transition: .2s;
+      background-color: $color-3;
+      &:hover {
+        letter-spacing: 1px;
+        color: $color-2;
+      }
+    }
+    .formMessage {
+      margin-top: -210px;
       padding: 12px;
       opacity: 0;
       background: $color-2;
@@ -176,6 +189,7 @@
       border-radius: 4px;
       box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
     }
+    
     
   }
   
