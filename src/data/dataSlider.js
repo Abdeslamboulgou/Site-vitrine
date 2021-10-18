@@ -1,53 +1,81 @@
-import { v4 as uuidv4 } from "uuid";
-
 const dataSlider = [
   {
-    id: uuidv4(),
+    id: 1,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 2,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 3,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 4,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 5,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 6,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 7,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 8,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 9,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 10,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 11,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 12,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 13,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 14,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 15,
+    title: "Lorem ipsum",
+    subTitle: "Lorem"
+  },
+  {
+    id: 16,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },

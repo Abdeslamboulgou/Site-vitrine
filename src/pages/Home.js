@@ -35,7 +35,7 @@ const Home = () => {
             <Navigation/>
             <SocialMedia/>
             <div className='home-main'>
-                <div className='maib-content'>
+                <div className='main-content'>
                        <Description/>
                 </div>
             </div>

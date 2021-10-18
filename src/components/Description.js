@@ -7,27 +7,6 @@ const Description = () => {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
-    const nextSlide = () => {
-        if (slideIndex !== dataSlider.length) {
-            setSlideIndex(slideIndex + 1)
-        }
-        else if (slideIndex === dataSlider.length) {
-            setSlideIndex(1)
-        }
-    }
-
-    const prevSlide = () => {
-        if (slideIndex !== 1) {
-            setSlideIndex(slideIndex - 1)
-        }
-        else if (slideIndex === 1) {
-            setSlideIndex(dataSlider.length)
-        }
-    }
-
-    const moveDot = index => {
-        setSlideIndex(index)
-    }
     useEffect(() => {
         let tab = ["ⴱⵓⵎⴰⵍ - ⵏ - ⴷⴰⴷⵙⵙ", "Būmālen - Dādis", " س داد- نلاموب ", "est- une - commune - urbaine - du - Maroc", "située  -dans - la - région - de", " Drâa-Tafilalet", "province - de - Tinghir"]
         let wordIndex = 0
@@ -68,6 +47,28 @@ const Description = () => {
         }
         loop()
     }, [])
+
+    const nextSlide = () => {
+        if (slideIndex !== dataSlider.length) {
+            setSlideIndex(slideIndex + 1)
+        }
+        else if (slideIndex === dataSlider.length) {
+            setSlideIndex(1)
+        }
+    }
+
+    const prevSlide = () => {
+        if (slideIndex !== 1) {
+            setSlideIndex(slideIndex - 1)
+        }
+        else if (slideIndex === 1) {
+            setSlideIndex(dataSlider.length)
+        }
+    }
+
+    const moveDot = index => {
+        setSlideIndex(index)
+    } 
     return (
         <div className="container-slider">
             {dataSlider.map((item, index) => {
@@ -75,7 +76,7 @@ const Description = () => {
                     <div key={item.id}
                         className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                         <img
-                            src={process.env.PUBLIC_URL + `/assets/img${index + 1}.jpg`}
+                            src={process.env.PUBLIC_URL + `/assets/img/img${index + 1}.jpg`}
                             alt='bmln'
                         />
                     </div>
@@ -88,13 +89,13 @@ const Description = () => {
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
             <div className="container-dots">
-                {Array.from({ length: 10 }).map((item, index) => (
+                {Array.from({ length: 16 }).map((item, index) => (
                     <div
                         onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
-            </div>
+                </div> 
         </div>
     );
 };
